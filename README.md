@@ -1,7 +1,7 @@
 # Convert English date to Nepali date.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/krishnahimself/laravel-ad-to-bs-converter.svg?style=flat-square)](https://packagist.org/packages/krishnahimself/laravel-ad-to-bs-converter)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/krishnahimself/laravel-ad-to-bs-converter/run-tests?label=tests)](https://github.com/krishnahimself/laravel-ad-to-bs-converter/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/krishnahimself/laravel-ad-to-bs-converter/run-tests?label=tests)](https://github.com/krishnahimself/laravel-ad-to-bs-converter/actions?query=workflow%3ATests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/krishnahimself/laravel-ad-to-bs-converter.svg?style=flat-square)](https://packagist.org/packages/krishnahimself/laravel-ad-to-bs-converter)
 
 

@@ -7,7 +7,7 @@
 
 This package can convert english date to nepali date.
 
-Here area few short examples of what you can do:
+Here is one example of what you can do:
 
 Convert english date to nepali date. English date format to pass is (YYYY, M, D)
 

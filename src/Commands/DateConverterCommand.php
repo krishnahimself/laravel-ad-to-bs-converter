@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Krishnahimself\DateConverter\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DateConverterCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-ad-to-bs-converter';
 
     public $description = 'My command';
 

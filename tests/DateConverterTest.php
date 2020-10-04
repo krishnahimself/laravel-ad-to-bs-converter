@@ -15,7 +15,7 @@ class DateConverterTest extends TestCase
     }
 
     /** @test */
-    function it_can_convert_english_date_to_formatted_nepali_date()
+    public function it_can_convert_english_date_to_formatted_nepali_date()
     {
         $formattedNepaliDate = DateConverter::fromEnglishDate(2020, 10, 4)
         ->toFormattedNepaliDate();
@@ -24,7 +24,7 @@ class DateConverterTest extends TestCase
     }
 
     /** @test */
-    function it_can_convert_english_date_to_nepali_date_array()
+    public function it_can_convert_english_date_to_nepali_date_array()
     {
         $nepaliDateArray = DateConverter::fromEnglishDate(2020, 10, 4)->toNepaliDateArray();
 
@@ -32,14 +32,14 @@ class DateConverterTest extends TestCase
             'year' => 2077,
             'month' => 6,
             'day' => 18,
-            'day_of_week' => 1
+            'day_of_week' => 1,
         ];
 
         $this->assertEquals($result, $nepaliDateArray);
     }
 
     /** @test */
-    function it_can_convert_english_date_to_formatted_nepali_date_array()
+    public function it_can_convert_english_date_to_formatted_nepali_date_array()
     {
         $formattedNepaliDateArray = DateConverter::fromEnglishDate(2020, 10, 4)
         ->toFormattedNepaliDateArray();
@@ -48,7 +48,7 @@ class DateConverterTest extends TestCase
             'year' => '२०७७',
             'month' => 'असोज',
             'day' => '१८',
-            'day_of_week' => 'आइतवार'
+            'day_of_week' => 'आइतवार',
         ];
 
         $this->assertEquals($result, $formattedNepaliDateArray);

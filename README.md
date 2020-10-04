@@ -11,8 +11,9 @@ Here area few short examples of what you can do:
 
 Convert english date to nepali date. English date format to pass is (YYYY, M, D)
 
-```bash
-DateConverter::fromEnglishDate(2020, 10, 4)->toNepaliDate();
+```php
+DateConverter::fromEnglishDate(2020, 10, 4)->toFormattedNepaliDate();
+//Output: १८ असोज २०७७, आइतवार
 ```
 
 ## Installation
@@ -23,30 +24,11 @@ You can install the package via composer:
 composer require krishnahimself/laravel-ad-to-bs-converter
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="Krishnahimself\DateConverter\DateConverterServiceProvider" --tag="migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-```bash
-php artisan vendor:publish --provider="Krishnahimself\DateConverter\DateConverterServiceProvider" --tag="config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ``` php
-$laravel-ad-to-bs-converter = new Krishnahimself\DateConverter();
-echo $laravel-ad-to-bs-converter->echoPhrase('Hello, Krishnahimself!');
+$dateConverter = new Krishnahimself\DateConverter();
+echo $dateConverter->fromEnglishDate(2020, 10, 4)->toNepaliDate();
 ```
 
 ## Testing

@@ -3,8 +3,8 @@
 namespace Krishnahimself\DateConverter\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Krishnahimself\DateConverter\DateConverterServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

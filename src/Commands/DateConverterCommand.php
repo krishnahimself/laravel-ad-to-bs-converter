@@ -6,9 +6,9 @@ use Illuminate\Console\Command;
 
 class DateConverterCommand extends Command
 {
-    public $signature = 'laravel-ad-to-bs-converter';
+    public $signature = 'date-converter:ad-to-bs';
 
-    public $description = 'My command';
+    public $description = 'Convert english date to nepali date';
 
     public function handle()
     {

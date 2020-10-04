@@ -5,17 +5,15 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/krishnahimself/laravel-ad-to-bs-converter.svg?style=flat-square)](https://packagist.org/packages/krishnahimself/laravel-ad-to-bs-converter)
 
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This package can convert english date to nepali date.
 
-## Support us
+Here area few short examples of what you can do:
 
-Learn how to create a package like this one, by watching our premium video course:
+Convert english date to nepali date. English date format to pass is (YYYY, M, D)
 
-[![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+```bash
+DateConverter::fromEnglishDate(2020, 10, 4)->toNepaliDate();
+```
 
 ## Installation
 

@@ -27,8 +27,31 @@ composer require krishnahimself/laravel-ad-to-bs-converter
 ## Usage
 
 ``` php
-$dateConverter = new Krishnahimself\DateConverter();
-echo $dateConverter->fromEnglishDate(2020, 10, 4)->toNepaliDate();
+use Krishnahimself\DateConverter\DateConverter;
+
+$nepaliDate = DateConverter::fromEnglishDate(2020, 10, 4)->toNepaliDate();
+//Output: 2077-6-18
+
+$nepaliDate = DateConverter::fromEnglishDate(2020, 10, 4)->toFormattedNepaliDate();
+//Output: १८ असोज २०७७, आइतवार
+
+$nepaliDate = DateConverter::fromEnglishDate(2020, 10, 4)->toNepaliDateArray();
+//Output:
+[
+    'year' => 2077,
+    'month' => 6,
+    'day' => 18,
+    'day_of_week' => 1,
+]
+
+$nepaliDate = DateConverter::fromEnglishDate(2020, 10, 4)->toFormattedNepaliDateArray();
+//Output:
+[
+    'year' => '२०७७',
+    'month' => 'असोज',
+    'day' => '१८',
+    'day_of_week' => 'आइतवार',
+]
 ```
 
 ## Testing

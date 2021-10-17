@@ -188,9 +188,7 @@ class DateConverter
 
     public function toNepaliDateArray()
     {
-        $nepaliDate = $this->toNepaliDate();
-
-        explode('-', $nepaliDate);
+        $this->toNepaliDate();
 
         return [
             'year' => $this->nepaliYear,
